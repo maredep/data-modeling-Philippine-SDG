@@ -12,4 +12,4 @@ Modeling data related to Philippine Sustainable Development Goals means finding 
 
 ### Dimensional Model
 
-![alt text](Visio/Dimensional Modeling.png)
+![alt text](Visio/DimensionalModeling.png)
