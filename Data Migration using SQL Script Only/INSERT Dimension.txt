@@ -19,19 +19,19 @@ SET default_with_oids = false;
 --------------------------------------------------------------------------------
 -- Name: INSERT INTO goal_dim; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
-INSERT INTO goal_dim VALUES (1, 1, 'Decent Work and Economic Growth', 'Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all', '8');
+INSERT INTO goal_dim VALUES (1, 'Decent Work and Economic Growth', 'Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all', '8');
 
 --------------------------------------------------------------------------------
 -- Name: INSERT INTO target_dim; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
-INSERT INTO target_dim VALUES (1, 1, '8.1','Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries');
-INSERT INTO target_dim VALUES (2, 2, '8.5','By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value');
+INSERT INTO target_dim VALUES (1, '8.1','Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries');
+INSERT INTO target_dim VALUES (2, '8.5','By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value');
 
 --------------------------------------------------------------------------------
 -- Name: INSERT INTO subindicator_dim; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
-INSERT INTO subindicator_dim VALUES (1, 1, '8.1.1','Annual growth rate of real GDP per capita');
-INSERT INTO subindicator_dim VALUES (2, 2, '8.5.2','Unemployment rate by both sexes of 15 years and above');
+INSERT INTO subindicator_dim VALUES (1, '8.1.1','Annual growth rate of real GDP per capita');
+INSERT INTO subindicator_dim VALUES (2, '8.5.2','Unemployment rate by both sexes of 15 years and above');
 
 --------------------------------------------------------------------------------
 -- Name: INSERT INTO date_dim; Type: TABLE; Schema: public; Owner: -; Tablespace: 

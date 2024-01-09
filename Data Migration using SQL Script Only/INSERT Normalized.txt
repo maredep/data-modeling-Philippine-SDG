@@ -19,62 +19,62 @@ SET default_with_oids = false;
 --------------------------------------------------------------------------------
 -- Name: INSERT goal; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
-INSERT INTO goal VALUES (1, 'Decent Work and Economic Growth', 'Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all', '8');
+INSERT INTO goal VALUES (8, 'Decent Work and Economic Growth', 'Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all');
 
 --------------------------------------------------------------------------------
 -- Name: INSERT INTO target; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
-INSERT INTO target VALUES (1, 1, '8.1','Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries');
-INSERT INTO target VALUES (2, 1, '8.5','By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value');
+INSERT INTO target VALUES ('8.1', 8, 'Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries');
+INSERT INTO target VALUES ('8.5', 8, 'By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value');
 
 --------------------------------------------------------------------------------
 -- Name: INSERT INTO subindicator; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
-INSERT INTO subindicator VALUES (1, '8.1.1','Annual growth rate of real GDP per capita');
-INSERT INTO subindicator VALUES (2, '8.5.2','Unemployment rate by both sexes of 15 years and above');
+INSERT INTO subindicator VALUES ('8.1.1','Annual growth rate of real GDP per capita');
+INSERT INTO subindicator VALUES ('8.5.2','Unemployment rate by both sexes of 15 years and above');
 
 --------------------------------------------------------------------------------
 -- Name: INSERT INTO economics; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
-INSERT INTO economics VALUES (1,1,1,'2001',1.0);
-INSERT INTO economics VALUES (2,1,1,'2002',1.7);
-INSERT INTO economics VALUES (3,1,1,'2003',3.1);
-INSERT INTO economics VALUES (4,1,1,'2004',4.5);
-INSERT INTO economics VALUES (5,1,1,'2005',3.0);
-INSERT INTO economics VALUES (6,1,1,'2006',3.4);
-INSERT INTO economics VALUES (7,1,1,'2007',4.6);
-INSERT INTO economics VALUES (8,1,1,'2008',2.5);
-INSERT INTO economics VALUES (9,1,1,'2009',-0.4);
-INSERT INTO economics VALUES (10,1,1,'2010',5.5);
-INSERT INTO economics VALUES (11,1,1,'2011',2.1);
-INSERT INTO economics VALUES (12,1,1,'2012',5.1);
-INSERT INTO economics VALUES (13,1,1,'2013',4.9);
-INSERT INTO economics VALUES (14,1,1,'2014',4.6);
-INSERT INTO economics VALUES (15,1,1,'2015',4.6);
-INSERT INTO economics VALUES (16,1,1,'2016',5.4);
-INSERT INTO economics VALUES (17,1,1,'2017',5.2);
-INSERT INTO economics VALUES (18,1,1,'2018',4.7);
-INSERT INTO economics VALUES (19,1,1,'2019',4.6);
-INSERT INTO economics VALUES (20,1,1,'2020',-10.8);
-INSERT INTO economics VALUES (21,1,1,'2021',4.3);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2001',1.0);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2002',1.7);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2003',3.1);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2004',4.5);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2005',3.0);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2006',3.4);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2007',4.6);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2008',2.5);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2009',-0.4);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2010',5.5);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2011',2.1);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2012',5.1);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2013',4.9);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2014',4.6);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2015',4.6);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2016',5.4);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2017',5.2);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2018',4.7);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2019',4.6);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2020',-10.8);
+INSERT INTO economics VALUES (DEFAULT,'8.1','8.1.1','2021',4.3);
 
 --------------------------------------------------------------------------------
 -- Name: INSERT INTO unemployment; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
-INSERT INTO unemployment VALUES (1,2,2,'2005',7.8);
-INSERT INTO unemployment VALUES (2,2,2,'2006',8.0);
-INSERT INTO unemployment VALUES (3,2,2,'2007',7.3);
-INSERT INTO unemployment VALUES (4,2,2,'2008',7.4);
-INSERT INTO unemployment VALUES (5,2,2,'2009',7.5);
-INSERT INTO unemployment VALUES (6,2,2,'2010',7.4);
-INSERT INTO unemployment VALUES (7,2,2,'2011',7.0);
-INSERT INTO unemployment VALUES (8,2,2,'2012',7.0);
-INSERT INTO unemployment VALUES (9,2,2,'2013',7.1);
-INSERT INTO unemployment VALUES (10,2,2,'2014',6.6);
-INSERT INTO unemployment VALUES (11,2,2,'2015',6.3);
-INSERT INTO unemployment VALUES (12,2,2,'2016',5.4);
-INSERT INTO unemployment VALUES (13,2,2,'2017',5.7);
-INSERT INTO unemployment VALUES (14,2,2,'2018',5.3);
-INSERT INTO unemployment VALUES (15,2,2,'2019',5.1);
-INSERT INTO unemployment VALUES (16,2,2,'2020',10.3);
-INSERT INTO unemployment VALUES (17,2,2,'2021',7.8);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2005',7.8);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2006',8.0);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2007',7.3);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2008',7.4);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2009',7.5);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2010',7.4);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2011',7.0);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2012',7.0);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2013',7.1);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2014',6.6);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2015',6.3);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2016',5.4);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2017',5.7);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2018',5.3);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2019',5.1);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2020',10.3);
+INSERT INTO unemployment VALUES (DEFAULT,'8.5','8.5.2','2021',7.8);

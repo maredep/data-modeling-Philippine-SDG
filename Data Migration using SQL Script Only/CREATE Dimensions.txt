@@ -30,7 +30,6 @@ DROP TABLE IF EXISTS subindicator_dim;
 --------------------------------------------------------------------------
 CREATE TABLE goal_dim(
 	goal_key int PRIMARY KEY,
-	goal_id int,
 	goal_title varchar(255) NOT NULL,
 	goal_desc text,
 	goal_num smallint
@@ -41,7 +40,6 @@ CREATE TABLE goal_dim(
 --------------------------------------------------------------------------
 CREATE TABLE target_dim(
 	target_key int PRIMARY KEY,
-	target_id int,
 	target_num varchar(20) NOT NULL,
 	target_desc text
 );
@@ -51,7 +49,6 @@ CREATE TABLE target_dim(
 --------------------------------------------------------------------------
 CREATE TABLE subindicator_dim(
 	subindicator_key int PRIMARY KEY,
-	subindicator_id int,
 	subindicator_num varchar(20),
 	subindicator_desc text
 );
@@ -63,6 +60,3 @@ CREATE TABLE date_dim (
 	date_key int PRIMARY KEY,
 	date_year varchar(20)
 );
-
-
-

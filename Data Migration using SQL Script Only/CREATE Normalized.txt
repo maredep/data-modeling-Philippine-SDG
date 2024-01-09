@@ -33,19 +33,17 @@ DROP TABLE IF EXISTS economics;
 --------------------------------------------------------------------------------
 
 CREATE TABLE goal (
-    goal_id smallint NOT NULL PRIMARY KEY,
+    goal_num smallint NOT NULL PRIMARY KEY,
     goal_title varchar(255) NOT NULL,
-    goal_desc text,
-    goal_num smallint
+    goal_desc text
 );
 
 --------------------------------------------------------------------------------
 -- Name: target; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
 CREATE TABLE target (
-    target_id smallint NOT NULL PRIMARY KEY,
-    goal_id smallint NOT NULL REFERENCES goal(goal_id),
-    target_num varchar(20) NOT NULL,
+    target_num varchar(20) NOT NULL PRIMARY KEY,
+    goal_num smallint NOT NULL REFERENCES goal(goal_num),
     target_desc text
 );
 
@@ -53,8 +51,7 @@ CREATE TABLE target (
 -- Name: subindicator; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
 CREATE TABLE subindicator (
-    subindicator_id smallint NOT NULL PRIMARY KEY,
-    subindicator_num varchar(20),
+    subindicator_num varchar(20) NOT NULL PRIMARY KEY,
     subindicator_desc text
 );
 
@@ -62,9 +59,9 @@ CREATE TABLE subindicator (
 -- Name: economics; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
 CREATE TABLE economics (
-    economics_id smallint NOT NULL PRIMARY KEY,
-    target_id smallint NOT NULL REFERENCES target(target_id),
-    subindicator_id smallint NOT NULL REFERENCES subindicator(subindicator_id),
+    economics_id SMALLSERIAL PRIMARY KEY,
+    target_num varchar(20) NOT NULL REFERENCES target(target_num),
+    subindicator_num varchar(20) NOT NULL REFERENCES subindicator(subindicator_num),
     economics_date varchar(20),
     economics_value numeric
 );
@@ -73,9 +70,9 @@ CREATE TABLE economics (
 -- Name: unemployment; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --------------------------------------------------------------------------------
 CREATE TABLE unemployment (
-    unemployment_id smallint NOT NULL PRIMARY KEY,
-    target_id smallint NOT NULL REFERENCES target(target_id),
-    subindicator_id smallint NOT NULL REFERENCES subindicator(subindicator_id),
+    unemployment_id SMALLSERIAL PRIMARY KEY,
+    target_num varchar(20) NOT NULL REFERENCES target(target_num),
+    subindicator_num varchar(20) NOT NULL REFERENCES subindicator(subindicator_num),
     unemployment_date varchar(20),
     unemployment_value numeric
 );
