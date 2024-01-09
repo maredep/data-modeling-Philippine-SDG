@@ -4,12 +4,12 @@ Modeling data related to Philippine Sustainable Development Goals means finding 
 
 ### Entity-Relationship Diagram
 
-![Alt-text]()
+![alt text]()
 
 ### Normalized Model
 
-![Alt-text]()
+![alt text]()
 
 ### Dimensional Model
 
-![Alt-text]()
+![alt text]()
