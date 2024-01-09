@@ -8,8 +8,8 @@ Modeling data related to Philippine Sustainable Development Goals means finding 
 
 ### Normalized Model
 
-![alt text](Visio/NormalizedModel.png)
+<img src="Visio/NormalizedModel.png" width="500">
 
 ### Dimensional Model
 
-![alt text](Visio/DimensionalModeling.png)
+<img src="Visio/DimensionalModeling.png" width="500">
